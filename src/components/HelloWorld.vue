@@ -1,11 +1,12 @@
 <template>
   <v-container class="fill-height">
     <v-responsive class="d-flex align-center text-center fill-height">
-      <v-img
+      <!-- <v-img
         contain
         height="300"
-        src="src/assets/logo.svg"
-      />
+        src="../assets/logo.png"
+      /> -->
+      <img style="height: 300px" src="../assets/logo.png" alt="">
 
       <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
 
