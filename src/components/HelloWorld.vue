@@ -8,9 +8,9 @@
       /> -->
       <img style="height: 300px" src="../assets/logo.png" alt="" />
 
-      <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
+      <div>Welcome to</div>
 
-      <h1 class="text-h2 font-weight-bold">Vuetify</h1>
+      <span class="text-10">Vuetify</span>
 
       <div class="py-14" />
 
