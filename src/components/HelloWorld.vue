@@ -12,7 +12,7 @@
 
       <span class="text-10">Vuetify</span>
 
-      <div class="py-14" />
+      <div py-50 />
 
       <v-row class="d-flex align-center justify-center">
         <v-col cols="auto">

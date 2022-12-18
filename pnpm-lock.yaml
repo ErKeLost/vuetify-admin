@@ -8,6 +8,7 @@ specifiers:
   '@relaxed/layout': ^2.0.2
   '@types/node': ^18.11.11
   '@types/webfontloader': ^1.6.35
+  '@unocss/preset-attributify': ^0.47.6
   '@unocss/preset-uno': ^0.47.5
   '@unocss/vite': ^0.47.5
   '@vitejs/plugin-vue': ^4.0.0
@@ -63,6 +64,7 @@ devDependencies:
   '@iconify/json': 2.1.153
   '@types/node': 18.11.17
   '@types/webfontloader': 1.6.35
+  '@unocss/preset-attributify': 0.47.6
   '@unocss/preset-uno': 0.47.6
   '@unocss/vite': 0.47.6_vite@4.0.1
   '@vitejs/plugin-vue': 4.0.0_vite@4.0.1+vue@3.2.45
@@ -2208,6 +2210,12 @@ packages:
     dependencies:
       gzip-size: 6.0.0
       sirv: 2.0.2
+    dev: true
+
+  /@unocss/preset-attributify/0.47.6:
+    resolution: {integrity: sha512-s5XB8JpBPbGCHjvzc2j+Cx9o+QQm2CjRdQ7UjL05+uQcVYb8PBjlfD3BeIA21eBH5IxXF9SdOJfx8kUWNa5WFQ==}
+    dependencies:
+      '@unocss/core': 0.47.6
     dev: true
 
   /@unocss/preset-mini/0.47.6:

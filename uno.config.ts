@@ -1,5 +1,6 @@
 import { defineConfig } from "@unocss/vite";
 import presetUno from "@unocss/preset-uno";
+import attributify from "@unocss/preset-attributify";
 
 export default defineConfig({
   exclude: [
@@ -13,7 +14,7 @@ export default defineConfig({
     "mock",
     "./stats.html",
   ],
-  presets: [presetUno({ dark: "class" })],
+  presets: [presetUno({ dark: "class" }), attributify()],
   shortcuts: {
     "wh-full": "w-full h-full",
     "flex-center": "flex justify-center items-center",
