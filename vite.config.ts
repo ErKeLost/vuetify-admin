@@ -5,7 +5,7 @@ import vuetify from "vite-plugin-vuetify";
 // Utilities
 import { defineConfig } from "vite";
 import { fileURLToPath, URL } from "node:url";
-import { VitePWA } from 'vite-plugin-pwa'
+import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
