@@ -11,13 +11,12 @@ import "./style/index.css";
 // Composables
 import { createApp } from "vue";
 import RelaxedLayout from "@relaxed/layout";
-console.log(RelaxedLayout);
-
+import { setupStore } from "@/store";
 // Plugins
 import { registerPlugins } from "@/plugins";
 
 const app = createApp(App);
-
+setupStore(app);
 registerPlugins(app);
 app.use(RelaxedLayout);
 app.mount("#app");

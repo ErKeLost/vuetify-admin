@@ -2,6 +2,7 @@ import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import Components from "unplugin-vue-components/vite";
 import { NaiveUiResolver } from "unplugin-vue-components/resolvers";
+import AutoImport from "unplugin-auto-import/vite";
 import { FileSystemIconLoader } from "unplugin-icons/loaders";
 import { getSrcPath } from "../utils";
 
@@ -25,6 +26,12 @@ export default function unplugin(viteEnv: ImportMetaEnv) {
       // },
       scale: 1,
       defaultClass: "inline-block",
+    }),
+    AutoImport({
+      imports: ["vue", "vue-router", "pinia", "@vueuse/head", "@vueuse/core"],
+      dts: "src/auto-imports.d.ts",
+      dirs: ["src/composables", "src/store"],
+      vueTemplate: true,
     }),
     Components({
       dts: "src/typings/components.d.ts",

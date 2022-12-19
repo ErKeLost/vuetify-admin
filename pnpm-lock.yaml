@@ -21,6 +21,7 @@ specifiers:
   eslint-config-relaxed-vue: ^2.0.3
   husky: ^8.0.2
   lint-staged: ^13.1.0
+  lodash-es: ^4.17.21
   mockjs: ^1.1.0
   pinia: ^2.0.28
   pinia-plugin-persistedstate: ^3.0.1
@@ -74,6 +75,7 @@ devDependencies:
   eslint-config-relaxed-vue: 2.0.3_lzzuuodtsqwxnvqeq4g4likcqa
   husky: 8.0.2
   lint-staged: 13.1.0
+  lodash-es: 4.17.21
   mockjs: 1.1.0
   prettier: 2.8.1
   rollup-plugin-visualizer: 5.8.3
@@ -4935,6 +4937,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
+    dev: true
+
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
     dev: true
 
   /lodash.camelcase/4.3.0:
