@@ -34,6 +34,7 @@
           <v-btn rounded="pill" @click="changeTheme('dark')" color="primary">
             dark Button
           </v-btn>
+          <v-color-picker></v-color-picker>
         </v-navigation-drawer>
       </v-main>
     </v-app>
@@ -51,6 +52,7 @@ import { useThemeStore } from "./store/modules/theme";
 // }
 // const vuetify = useVuetify();
 const instance = getCurrentInstance();
+console.log(instance?.root);
 
 const { count } = storeToRefs(useSettingStore());
 const { defaultTheme } = storeToRefs(useThemeStore());
