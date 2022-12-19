@@ -14,9 +14,13 @@ import RelaxedLayout from "@relaxed/layout";
 import { setupStore } from "@/store";
 // Plugins
 import { registerPlugins } from "@/plugins";
+async function bootstrap() {
+  const app = createApp(App);
+  await setupStore(app);
 
-const app = createApp(App);
-setupStore(app);
-registerPlugins(app);
-app.use(RelaxedLayout);
-app.mount("#app");
+  await registerPlugins(app);
+  app.use(RelaxedLayout);
+  app.mount("#app");
+}
+
+bootstrap();
