@@ -63,10 +63,9 @@ nextTick(() => {
 });
 const color = ref("");
 watch(color, (newValue) => {
-  // const docEle = document.querySelector(".v-application");
   const docEle = document.documentElement;
-  docEle.style.setProperty("--v-theme-primary", "200,156,132");
   docEle.classList.add("v-theme--light");
+  docEle.style.setProperty("--v-theme-primary", "200,156,132");
   console.log(docEle);
 
   // console.log(document.documentElement);
