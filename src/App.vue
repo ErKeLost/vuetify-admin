@@ -43,6 +43,7 @@
 
 <script setup lang="ts">
 // import { useTheme } from "vuetify";
+import { resolve } from "node:path";
 import { useVuetify } from "./composable/vuetify";
 import { useSettingStore } from "./store/modules/setting";
 import { useThemeStore } from "./store/modules/theme";
@@ -52,7 +53,6 @@ import { useThemeStore } from "./store/modules/theme";
 // }
 // const vuetify = useVuetify();
 const instance = getCurrentInstance();
-console.log(instance?.root);
 
 const { count } = storeToRefs(useSettingStore());
 const { defaultTheme } = storeToRefs(useThemeStore());

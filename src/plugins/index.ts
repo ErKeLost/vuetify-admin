@@ -16,21 +16,29 @@ import { createVuetify } from "vuetify";
 // Types
 import type { App } from "vue";
 
+const defaultThemeColor = {
+  light: {
+    colors: {
+      primary: "#bfa",
+      secondary: "#5CBBF6",
+    },
+  },
+};
 export async function registerPlugins(app: App) {
   const { defaultTheme } = storeToRefs(useThemeStore());
-  console.log(defaultTheme.value);
   loadFonts();
   app.use(
     createVuetify({
       theme: {
         // defaultTheme: defaultTheme.value,
         themes: {
-          light: {
-            colors: {
-              primary: "#1867C0",
-              secondary: "#5CBBF6",
-            },
-          },
+          // light: {
+          //   colors: {
+          //     primary: "#bfa",
+          //     secondary: "#5CBBF6",
+          //   },
+          // },
+          ...defaultThemeColor,
         },
       },
     })
