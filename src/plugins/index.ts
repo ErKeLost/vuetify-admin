@@ -17,30 +17,30 @@ import { createVuetify } from "vuetify";
 import type { App } from "vue";
 
 const defaultThemeColor = {
-  light: {
-    colors: {
-      primary: "#bfa",
-      secondary: "#5CBBF6",
-    },
-  },
+  // light: {
+  //   colors: {
+  //     primary: "#bfa",
+  //     secondary: "#5CBBF6",
+  //   },
+  // },
 };
 export async function registerPlugins(app: App) {
   const { defaultTheme } = storeToRefs(useThemeStore());
   loadFonts();
   app.use(
     createVuetify({
-      theme: {
-        // defaultTheme: defaultTheme.value,
-        themes: {
-          // light: {
-          //   colors: {
-          //     primary: "#bfa",
-          //     secondary: "#5CBBF6",
-          //   },
-          // },
-          ...defaultThemeColor,
-        },
-      },
+      // theme: {
+      //   // defaultTheme: defaultTheme.value,
+      //   themes: {
+      //     // light: {
+      //     //   colors: {
+      //     //     primary: "#bfa",
+      //     //     secondary: "#5CBBF6",
+      //     //   },
+      //     // },
+      //     ...defaultThemeColor,
+      //   },
+      // },
     })
   );
 }
