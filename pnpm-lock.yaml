@@ -11,6 +11,7 @@ specifiers:
   '@unocss/preset-attributify': ^0.47.6
   '@unocss/preset-uno': ^0.47.6
   '@unocss/vite': ^0.47.6
+  '@variesd/vue': ^0.0.9
   '@vitejs/plugin-vue': ^4.0.0
   '@vitejs/plugin-vue-jsx': ^3.0.0
   '@vueuse/core': ^9.7.0
@@ -47,6 +48,7 @@ specifiers:
 dependencies:
   '@mdi/font': 7.0.96
   '@relaxed/layout': 2.0.3_vue@3.2.45
+  '@variesd/vue': 0.0.9_vue@3.2.45
   '@vueuse/core': 9.7.0_vue@3.2.45
   '@vueuse/head': 1.0.22_vue@3.2.45
   animate.css: 4.1.1
@@ -2269,6 +2271,30 @@ packages:
     transitivePeerDependencies:
       - rollup
     dev: true
+
+  /@variesd/animated/0.0.9:
+    resolution: {integrity: sha512-FyHUmvJ5JYrEM34Cpzf+IOoZD4lDwECqkCbM9fKBesJC50yDqnqkvb+SjAmeyqjLYu5IsSwSXTu/QnH2oOmm/g==}
+    dev: false
+
+  /@variesd/core/0.0.9:
+    resolution: {integrity: sha512-kZBqyKDOAM3ShohBTRd5NEtglSMGdrQYqjfdttRuB6m2D0LMvHuDryWQWCxzVc2Qf0A2QkISAUZwCJEXKdtcLQ==}
+    dependencies:
+      '@variesd/animated': 0.0.9
+    dev: false
+
+  /@variesd/vue/0.0.9_vue@3.2.45:
+    resolution: {integrity: sha512-cmawXEwN4OLvaJNKm881/PWYJNIBeq0HN2iEcWwJiMzPCO9UzM3+BJZXQQM5Nfj7yRQz8Jp//riSBAqM6N53sw==}
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^2.0.0 || >=3.0.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      '@variesd/core': 0.0.9
+      vue: 3.2.45
+      vue-demi: 0.13.11_vue@3.2.45
+    dev: false
 
   /@vitejs/plugin-vue-jsx/3.0.0_vite@4.0.2+vue@3.2.45:
     resolution: {integrity: sha512-vurkuzgac5SYuxd2HUZqAFAWGTF10diKBwJNbCvnWijNZfXd+7jMtqjPFbGt7idOJUn584fP1Ar9j/GN2jQ3Ew==}
