@@ -1,5 +1,5 @@
 <template>
-  <v-theme-provider :theme="defaultTheme">
+  <!-- <v-theme-provider :theme="defaultTheme">
     <v-app>
       <v-main>
         <RelaxedLayout>
@@ -39,7 +39,8 @@
         </v-navigation-drawer>
       </v-main>
     </v-app>
-  </v-theme-provider>
+  </v-theme-provider> -->
+  <RouterView />
 </template>
 
 <script setup lang="ts">
