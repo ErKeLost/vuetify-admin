@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
+    "@mdi/js": "^7.2.96",
     "@relaxed/layout": "^2.0.20",
     "@variesd/vue": "^0.0.9",
     "@vueuse/core": "^9.13.0",

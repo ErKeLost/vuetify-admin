@@ -13,13 +13,13 @@ import { createApp } from "vue";
 import RelaxedLayout from "@relaxed/layout";
 import { setupStore } from "@/store";
 // Plugins
-import { registerPlugins } from "@/plugins";
+import createVuetify from "@/plugins/vuetify";
 import { setupRouter } from "./router";
 async function bootstrap() {
   const app = createApp(App);
   await setupStore(app);
   await setupRouter(app);
-  await registerPlugins(app);
+  app.use(createVuetify);
   app.use(RelaxedLayout);
   app.mount("#app");
 }
