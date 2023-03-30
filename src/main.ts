@@ -7,6 +7,7 @@
 // Components
 import App from "./App.vue";
 import "uno.css";
+import "normalize.css";
 import "./style/index.css";
 // Composables
 import { createApp } from "vue";

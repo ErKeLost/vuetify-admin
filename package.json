@@ -18,6 +18,7 @@
     "@vueuse/core": "^9.13.0",
     "@vueuse/head": "^1.1.23",
     "animate.css": "^4.1.1",
+    "normalize.css": "^8.0.1",
     "pinia": "^2.0.33",
     "pinia-plugin-persistedstate": "^3.1.0",
     "roboto-fontface": "^0.10.0",
