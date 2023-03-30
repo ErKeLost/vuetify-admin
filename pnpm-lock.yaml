@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.5.1
   '@commitlint/config-conventional': ^17.4.4
-  '@iconify-json/carbon': latest
+  '@iconify-json/carbon': ^1.1.16
   '@mdi/font': 7.0.96
   '@mdi/js': ^7.2.96
   '@relaxed/layout': ^2.0.20

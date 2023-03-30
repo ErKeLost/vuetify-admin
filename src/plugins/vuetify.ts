@@ -1,11 +1,13 @@
 import "vuetify/styles";
+import "@mdi/font/css/materialdesignicons.css";
 import type { FunctionalComponent } from "vue";
 import { createVuetify, type IconSet, type IconProps } from "vuetify";
 import { en, zhHans } from "vuetify/locale";
-import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
+// import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 import { mdiAlertCircle, mdiCloseCircle } from "@mdi/js";
 import { useDark } from "@vueuse/core";
-
+import { aliases, fa } from "vuetify/iconsets/fa";
+import { mdi } from "vuetify/iconsets/mdi";
 // fix vuetify#16870(https://github.com/vuetifyjs/vuetify/issues/16870)
 aliases["warning"] = mdiAlertCircle;
 aliases["error"] = mdiCloseCircle;
@@ -63,7 +65,7 @@ export default createVuetify({
   icons: {
     defaultSet: "mdi",
     aliases,
-    sets: { mdi, custom },
+    sets: { mdi, custom, fa },
   },
   display: {
     mobileBreakpoint: "sm",

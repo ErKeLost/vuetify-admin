@@ -30,7 +30,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
-    "@iconify-json/carbon": "latest",
+    "@iconify-json/carbon": "^1.1.16",
     "@types/node": "^18.15.11",
     "@types/webfontloader": "^1.6.35",
     "@unocss/preset-attributify": "^0.47.6",
