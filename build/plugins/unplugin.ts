@@ -35,13 +35,19 @@ export default function unplugin(viteEnv: ImportMetaEnv) {
     }),
     Components({
       dts: "src/typings/components.d.ts",
+      dirs: ["src/components", "src/views"],
       types: [{ from: "vue-router", names: ["RouterLink", "RouterView"] }],
       resolvers: [
-        NaiveUiResolver(),
         IconsResolver({
           // customCollections: [collectionName],
           // componentPrefix: VITE_ICON_PREFFIX,
         }),
+        {
+          type: "component",
+          resolve: (name) => {
+            if (name.match(/^V[A-Z]/)) return { name, from: "vuetify/lib" };
+          },
+        },
       ],
     }),
   ];
