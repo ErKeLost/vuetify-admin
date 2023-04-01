@@ -7,7 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    App: typeof import("./../App.vue")["default"]
     Dashboard: typeof import('./../views/dashboard/index.vue')['default']
     HelloWorld: typeof import('./../components/HelloWorld.vue')['default']
     Login: typeof import('./../views/login/index.vue')['default']
@@ -16,6 +15,5 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     SignIn: typeof import('./../views/login/cpns/sign-in.vue')['default']
     SignUp: typeof import('./../views/login/cpns/sign-up.vue')['default']
-    Statistic: typeof import("./../../node_modules/@variesd/vue/src/statistic/statistic.vue")["default"]
   }
 }
