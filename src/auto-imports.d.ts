@@ -151,6 +151,7 @@ declare global {
   const useDeviceOrientation: typeof import('@vueuse/core')['useDeviceOrientation']
   const useDevicePixelRatio: typeof import('@vueuse/core')['useDevicePixelRatio']
   const useDevicesList: typeof import('@vueuse/core')['useDevicesList']
+  const useDisplay: typeof import('vuetify')['useDisplay']
   const useDisplayMedia: typeof import('@vueuse/core')['useDisplayMedia']
   const useDocumentVisibility: typeof import('@vueuse/core')['useDocumentVisibility']
   const useDraggable: typeof import('@vueuse/core')['useDraggable']
@@ -183,8 +184,10 @@ declare global {
   const useIntervalFn: typeof import('@vueuse/core')['useIntervalFn']
   const useKeyModifier: typeof import('@vueuse/core')['useKeyModifier']
   const useLastChanged: typeof import('@vueuse/core')['useLastChanged']
+  const useLayout: typeof import('vuetify')['useLayout']
   const useLink: typeof import('vue-router')['useLink']
   const useLocalStorage: typeof import('@vueuse/core')['useLocalStorage']
+  const useLocale: typeof import('vuetify')['useLocale']
   const useMagicKeys: typeof import('@vueuse/core')['useMagicKeys']
   const useManualRefHistory: typeof import('@vueuse/core')['useManualRefHistory']
   const useMediaControls: typeof import('@vueuse/core')['useMediaControls']
@@ -219,6 +222,7 @@ declare global {
   const useResizeObserver: typeof import('@vueuse/core')['useResizeObserver']
   const useRoute: typeof import('vue-router')['useRoute']
   const useRouter: typeof import('vue-router')['useRouter']
+  const useRtl: typeof import('vuetify')['useRtl']
   const useScreenOrientation: typeof import('@vueuse/core')['useScreenOrientation']
   const useScreenSafeArea: typeof import('@vueuse/core')['useScreenSafeArea']
   const useScriptTag: typeof import('@vueuse/core')['useScriptTag']
@@ -240,6 +244,7 @@ declare global {
   const useTextDirection: typeof import('@vueuse/core')['useTextDirection']
   const useTextSelection: typeof import('@vueuse/core')['useTextSelection']
   const useTextareaAutosize: typeof import('@vueuse/core')['useTextareaAutosize']
+  const useTheme: typeof import('vuetify')['useTheme']
   const useThrottle: typeof import('@vueuse/core')['useThrottle']
   const useThrottleFn: typeof import('@vueuse/core')['useThrottleFn']
   const useThrottledRefHistory: typeof import('@vueuse/core')['useThrottledRefHistory']
@@ -436,6 +441,7 @@ declare module 'vue' {
     readonly useDeviceOrientation: UnwrapRef<typeof import('@vueuse/core')['useDeviceOrientation']>
     readonly useDevicePixelRatio: UnwrapRef<typeof import('@vueuse/core')['useDevicePixelRatio']>
     readonly useDevicesList: UnwrapRef<typeof import('@vueuse/core')['useDevicesList']>
+    readonly useDisplay: UnwrapRef<typeof import('vuetify')['useDisplay']>
     readonly useDisplayMedia: UnwrapRef<typeof import('@vueuse/core')['useDisplayMedia']>
     readonly useDocumentVisibility: UnwrapRef<typeof import('@vueuse/core')['useDocumentVisibility']>
     readonly useDraggable: UnwrapRef<typeof import('@vueuse/core')['useDraggable']>
@@ -468,8 +474,10 @@ declare module 'vue' {
     readonly useIntervalFn: UnwrapRef<typeof import('@vueuse/core')['useIntervalFn']>
     readonly useKeyModifier: UnwrapRef<typeof import('@vueuse/core')['useKeyModifier']>
     readonly useLastChanged: UnwrapRef<typeof import('@vueuse/core')['useLastChanged']>
+    readonly useLayout: UnwrapRef<typeof import('vuetify')['useLayout']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
     readonly useLocalStorage: UnwrapRef<typeof import('@vueuse/core')['useLocalStorage']>
+    readonly useLocale: UnwrapRef<typeof import('vuetify')['useLocale']>
     readonly useMagicKeys: UnwrapRef<typeof import('@vueuse/core')['useMagicKeys']>
     readonly useManualRefHistory: UnwrapRef<typeof import('@vueuse/core')['useManualRefHistory']>
     readonly useMediaControls: UnwrapRef<typeof import('@vueuse/core')['useMediaControls']>
@@ -504,6 +512,7 @@ declare module 'vue' {
     readonly useResizeObserver: UnwrapRef<typeof import('@vueuse/core')['useResizeObserver']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('vue-router')['useRouter']>
+    readonly useRtl: UnwrapRef<typeof import('vuetify')['useRtl']>
     readonly useScreenOrientation: UnwrapRef<typeof import('@vueuse/core')['useScreenOrientation']>
     readonly useScreenSafeArea: UnwrapRef<typeof import('@vueuse/core')['useScreenSafeArea']>
     readonly useScriptTag: UnwrapRef<typeof import('@vueuse/core')['useScriptTag']>
@@ -525,6 +534,7 @@ declare module 'vue' {
     readonly useTextDirection: UnwrapRef<typeof import('@vueuse/core')['useTextDirection']>
     readonly useTextSelection: UnwrapRef<typeof import('@vueuse/core')['useTextSelection']>
     readonly useTextareaAutosize: UnwrapRef<typeof import('@vueuse/core')['useTextareaAutosize']>
+    readonly useTheme: UnwrapRef<typeof import('vuetify')['useTheme']>
     readonly useThrottle: UnwrapRef<typeof import('@vueuse/core')['useThrottle']>
     readonly useThrottleFn: UnwrapRef<typeof import('@vueuse/core')['useThrottleFn']>
     readonly useThrottledRefHistory: UnwrapRef<typeof import('@vueuse/core')['useThrottledRefHistory']>

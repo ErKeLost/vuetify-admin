@@ -28,7 +28,22 @@ export default function unplugin(viteEnv: ImportMetaEnv) {
       defaultClass: "inline-block",
     }),
     AutoImport({
-      imports: ["vue", "vue-router", "pinia", "@vueuse/head", "@vueuse/core"],
+      imports: [
+        "vue",
+        "vue-router",
+        "pinia",
+        "@vueuse/head",
+        "@vueuse/core",
+        {
+          vuetify: [
+            "useTheme",
+            "useRtl",
+            "useLocale",
+            "useDisplay",
+            "useLayout",
+          ],
+        },
+      ],
       dts: "src/auto-imports.d.ts",
       dirs: ["src/composables", "src/store"],
       vueTemplate: true,

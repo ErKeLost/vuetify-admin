@@ -1,19 +1,12 @@
 <template>
   <div>sign up</div>
-
-  <div fixed right-8 bottom-20>
-    <v-btn icon="mdi-wrench" size="x-large" @click="showSetting"> </v-btn>
-  </div>
-  <v-navigation-drawer v-model="drawer" location="right" temporary>
-    <v-btn color="primary">颜色测试</v-btn>
-    <v-btn color="primary" @click="toggleDark()">主题测试</v-btn>
-    {{ theme.global.name.value }}
-    <v-color-picker v-model="color"></v-color-picker>
-  </v-navigation-drawer>
+  <v-btn color="primary">颜色测试</v-btn>
+  <v-btn color="primary" @click="toggleDark()">主题测试</v-btn>
+  {{ theme.global.name.value }}
+  <v-color-picker v-model="color"></v-color-picker>
 </template>
 
 <script lang="ts" setup>
-const drawer = ref<boolean>(false);
 const theme = useTheme();
 const color = computed({
   get() {
@@ -33,10 +26,6 @@ const isDark = useDark({
   },
 });
 const toggleDark = useToggle(isDark);
-
-function showSetting() {
-  drawer.value = !drawer.value;
-}
 </script>
 
 <style lang="scss" scoped></style>
