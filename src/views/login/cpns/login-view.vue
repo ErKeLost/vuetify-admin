@@ -1,5 +1,5 @@
 <template>
-  <div>login-view</div>
+  <img src="@/assets/login-bg.svg" alt="" />
 </template>
 
 <script lang="ts" setup></script>

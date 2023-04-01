@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     Dashboard: typeof import('./../views/dashboard/index.vue')['default']
     HelloWorld: typeof import('./../components/HelloWorld.vue')['default']
     Login: typeof import('./../views/login/index.vue')['default']
+    LoginAction: typeof import('./../views/login/cpns/login-action.vue')['default']
     LoginView: typeof import('./../views/login/cpns/login-view.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

@@ -2,6 +2,7 @@
   <v-app>
     <v-main>
       <RouterView />
+      <SignUp />
     </v-main>
   </v-app>
 </template>
