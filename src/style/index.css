@@ -15,8 +15,3 @@ html {
 .v-field__outline {
   color: rgb(var(--v-theme-primary));
 }
-
-.v-field__input {
-  min-height: 10px;
-  height: 10px;
-}

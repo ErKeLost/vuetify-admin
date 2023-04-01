@@ -40,7 +40,15 @@
         <v-text-field variant="outlined"></v-text-field>
       </div>
       <div>
-        <v-checkbox label="Checkbox"></v-checkbox>
+        <v-btn block size="large" color="primary" variant="flat">
+          Sign In
+        </v-btn>
+      </div>
+      <div flex my-4 items-center>
+        <div>New to Modernize?</div>
+        <v-btn variant="plain" font-700 color="primary" :ripple="false">
+          Create a account
+        </v-btn>
       </div>
     </div>
   </div>
@@ -49,6 +57,15 @@
 <script lang="ts" setup></script>
 
 <style lang="scss" scoped>
+:deep(.v-field__field) {
+  height: 44px !important;
+  padding: 0;
+}
+
+:deep(.v-field__input) {
+  padding-top: 0px;
+  --v-field-padding-bottom: 0px;
+}
 .subTitle {
   font-size: 0.875rem !important;
   font-weight: 400;
