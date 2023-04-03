@@ -3,7 +3,7 @@
     <div>
       <div font-700 class="text">Welcome to ErkeLost Size</div>
       <div class="subTitle" color-000000DE>Your Admin Dashboard</div>
-      <div flex-center gap-2>
+      <div class="other-login" flex-center gap-2>
         <v-btn
           rounded="lg"
           border
@@ -11,7 +11,7 @@
           variant="text"
           prepend-icon="mdi-wechat"
         >
-          <template v-slot:prepend>
+          <template #prepend>
             <v-icon color="success"></v-icon>
           </template>
           sign in with wechat
@@ -23,7 +23,7 @@
           variant="text"
           prepend-icon="mdi-qqchat"
         >
-          <template v-slot:prepend>
+          <template #prepend>
             <v-icon color="blue"></v-icon>
           </template>
           sign in with qq
@@ -34,21 +34,30 @@
         <span>or sign in with</span>
       </div>
       <div mb-4>
-        <div mb-2>Username</div>
+        <div mb-2 font-600>Username</div>
         <v-text-field variant="outlined"></v-text-field>
-        <div mb-2>Password</div>
+        <div mb-2 font-600>Password</div>
         <v-text-field variant="outlined"></v-text-field>
       </div>
       <div>
-        <v-btn block size="large" color="primary" variant="flat">
+        <v-btn font-700 block size="large" color="primary" variant="flat">
           Sign In
         </v-btn>
       </div>
       <div flex my-4 items-center>
-        <div>New to Modernize?</div>
+        <div>New to Adny?</div>
         <v-btn variant="plain" font-700 color="primary" :ripple="false">
           Create a account
         </v-btn>
+      </div>
+      <div my-8 flex-center>
+        <span>or sign in with</span>
+      </div>
+      <div flex-center gap-10>
+        <v-btn density="default" icon="mdi-google"></v-btn>
+        <v-btn density="default" icon="mdi-github"></v-btn>
+        <v-btn density="default" icon="mdi-twitter"></v-btn>
+        <v-btn density="default" icon="mdi-instagram"></v-btn>
       </div>
     </div>
   </div>
@@ -57,6 +66,11 @@
 <script lang="ts" setup></script>
 
 <style lang="scss" scoped>
+.other-login {
+  :deep(.v-btn.v-btn--density-default) {
+    --v-btn-height: 38px !important;
+  }
+}
 :deep(.v-field__field) {
   height: 44px !important;
   padding: 0;
@@ -65,6 +79,7 @@
 :deep(.v-field__input) {
   padding-top: 0px;
   --v-field-padding-bottom: 0px;
+  --v-input-control-height: 44px;
 }
 .subTitle {
   font-size: 0.875rem !important;
