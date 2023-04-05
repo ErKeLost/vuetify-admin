@@ -8,12 +8,12 @@
     <div mx-6 my-4>Theme Change</div>
     <v-container justify="space-around" flex>
       <v-col cols="12" md="4" justify="space-around">
-        <v-sheet>
+        <v-sheet flex-center>
           <v-btn density="default" icon="mdi-white-balance-sunny"></v-btn>
         </v-sheet>
       </v-col>
       <v-col cols="12" md="4" justify="space-around">
-        <v-sheet>
+        <v-sheet flex-center>
           <v-btn
             density="default"
             icon="mdi-theme-light-dark"
@@ -23,12 +23,57 @@
       </v-col>
 
       <v-col cols="12" md="4" justify="space-around">
-        <v-sheet>
+        <v-sheet flex-center>
           <v-btn density="default" icon="mdi-moon-waning-crescent"></v-btn>
         </v-sheet>
       </v-col>
     </v-container>
-    <div mx-6 my-4>Theme Light Color</div>
+    <div class="action-button">
+      <div mx-6 my-4>Container Option</div>
+      <v-row justify="space-around">
+        <v-col cols="12" md="4" justify="space-around">
+          <v-btn variant="outlined"> Boxed </v-btn>
+        </v-col>
+
+        <v-col cols="12" md="4" justify="space-around">
+          <v-btn variant="outlined"> Full </v-btn>
+        </v-col>
+      </v-row>
+
+      <div mx-6 my-4>Sidebar Type</div>
+      <v-row justify="space-around">
+        <v-col cols="12" md="4" justify="space-around">
+          <v-btn variant="outlined"> Collapse </v-btn>
+        </v-col>
+
+        <v-col cols="12" md="4" justify="space-around">
+          <v-btn variant="outlined"> Full </v-btn>
+        </v-col>
+      </v-row>
+
+      <div mx-6 my-4>Sidebar Layout</div>
+      <v-row justify="space-around">
+        <v-col cols="12" md="4" justify="space-around">
+          <v-btn variant="outlined"> Vertical </v-btn>
+        </v-col>
+
+        <v-col cols="12" md="4" justify="space-around">
+          <v-btn variant="outlined"> Horizontal </v-btn>
+        </v-col>
+      </v-row>
+
+      <div mx-6 my-4>Card with</div>
+      <v-row justify="space-around">
+        <v-col cols="12" md="4" justify="space-around">
+          <v-btn variant="outlined"> shadow </v-btn>
+        </v-col>
+
+        <v-col cols="12" md="4" justify="space-around">
+          <v-btn variant="outlined"> Border </v-btn>
+        </v-col>
+      </v-row>
+    </div>
+
     <v-container>
       <v-row justify="space-around">
         <v-col
@@ -123,4 +168,11 @@ const defaultThemeLightColor = [
 ];
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.action-button {
+  :deep(.v-btn.v-btn--density-default) {
+    --v-btn-height: 66px !important;
+    border: #eee 1px solid;
+  }
+}
+</style>
