@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+const router = useRouter();
+const snackbar = ref(false);
+function handleLogin() {
+  snackbar.value = true;
+  // router.push("/dashboard");
+}
+</script>
 <template>
   <div wh-full flex-center>
     <div>
@@ -40,7 +48,14 @@
         <v-text-field variant="outlined"></v-text-field>
       </div>
       <div>
-        <v-btn font-700 block size="large" color="primary" variant="flat">
+        <v-btn
+          font-700
+          block
+          size="large"
+          color="primary"
+          variant="flat"
+          @click="handleLogin"
+        >
           Sign In
         </v-btn>
       </div>
@@ -60,10 +75,9 @@
         <v-btn density="default" icon="mdi-instagram"></v-btn>
       </div>
     </div>
+    <v-snackbar v-model="snackbar"> Login Successful! </v-snackbar>
   </div>
 </template>
-
-<script lang="ts" setup></script>
 
 <style lang="scss" scoped>
 .other-login {
